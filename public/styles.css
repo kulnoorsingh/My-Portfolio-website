@@ -1,1 +1,171 @@
-"" 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #00CED1, #FFFFFF);
+    padding-top: 60px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00CED1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #008B8B;
+}
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project img {
+    width: 100%;
+    height: auto;
+}
+.project h3 {
+    margin: 10px 0;
+}
+.project p {
+    font-size: 14px;
+}
+.about {
+    padding: 50px 20px;
+    background: #F5F5F5;
+    text-align: center;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.about-content img {
+    border-radius: 50%;
+}
+.about-content p {
+    font-size: 18px;
+}
+.contact {
+    padding: 50px 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+textarea {
+    height: 100px;
+}
+button {
+    padding: 10px;
+    background: #00CED1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #008B8B;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

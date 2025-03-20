@@ -1,15 +1,23 @@
 {
-  "name": "portfolio-website",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.21.2"
-  }
+    "name": "portfolio-website",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kulnoorsingh/My-Portfolio-website.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kulnoorsingh/My-Portfolio-website/issues"
+    },
+    "homepage": "https://github.com/kulnoorsingh/My-Portfolio-website#readme",
+    "description": ""
 }
